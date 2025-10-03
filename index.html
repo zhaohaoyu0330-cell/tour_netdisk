@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2E8B57">
+    <title data-zh="北旅CLUB - 专业北京导游服务" data-en="BeiLv CLUB - Professional Beijing Tour Guide Service">北旅CLUB - 专业北京导游服务</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>北旅CLUB</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-zh="首页" data-en="Home">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#guides" class="nav-link" data-zh="导游介绍" data-en="Our Guides">导游介绍</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#attractions" class="nav-link" data-zh="北京景点" data-en="Attractions">北京景点</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#routes" class="nav-link" data-zh="旅游线路" data-en="Tour Routes">旅游线路</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-zh="联系我们" data-en="Contact">联系我们</a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <div class="theme-switcher">
+                    <button class="theme-btn" id="themeToggle" title="切换明暗模式">
+                        <i class="fas fa-sun" id="themeIcon"></i>
+                    </button>
+                </div>
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="zh">中文</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页横幅 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 data-zh="欢迎来到北旅CLUB" data-en="Welcome to BeiLv CLUB">欢迎来到北旅CLUB</h1>
+            <p data-zh="专业北京导游服务，带您深度体验古都魅力" data-en="Professional Beijing tour guide service, experience the charm of the ancient capital">专业北京导游服务，带您深度体验古都魅力</p>
+            <div class="hero-buttons">
+                <a href="#guides" class="btn btn-primary" data-zh="选择导游" data-en="Choose Guide">选择导游</a>
+                <a href="#routes" class="btn btn-secondary" data-zh="查看线路" data-en="View Routes">查看线路</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-image-container">
+                <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Great Wall of China" class="hero-main-image">
+                <div class="hero-image-overlay">
+                    <h3 data-zh="万里长城" data-en="Great Wall of China">万里长城</h3>
+                    <p data-zh="世界文化遗产，中华民族的象征" data-en="UNESCO World Heritage, Symbol of Chinese Nation">世界文化遗产，中华民族的象征</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 导游介绍 -->
+    <section id="guides" class="guides-section">
+        <div class="container">
+            <h2 class="section-title" data-zh="我们的专业导游" data-en="Our Professional Guides">我们的专业导游</h2>
+            <p class="section-subtitle" data-zh="经验丰富的本地导游，为您提供最地道的北京体验" data-en="Experienced local guides providing the most authentic Beijing experience">经验丰富的本地导游，为您提供最地道的北京体验</p>
+            
+            <div class="guides-grid">
+                <div class="guide-card">
+                    <div class="guide-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>李师傅</h3>
+                    <p class="guide-title" data-zh="资深历史导游" data-en="Senior History Guide">资深历史导游</p>
+                    <p class="guide-experience" data-zh="15年经验" data-en="15 Years Experience">15年经验</p>
+                    <p class="guide-description" data-zh="专精明清历史，对故宫、天坛等古建筑有深入研究，讲解生动有趣。" data-en="Specializes in Ming and Qing history, with deep research on ancient architecture like the Forbidden City and Temple of Heaven. Provides engaging and interesting explanations.">专精明清历史，对故宫、天坛等古建筑有深入研究，讲解生动有趣。</p>
+                    <div class="guide-skills">
+                        <span class="skill-tag" data-zh="历史讲解" data-en="History">历史讲解</span>
+                        <span class="skill-tag" data-zh="古建筑" data-en="Architecture">古建筑</span>
+                        <span class="skill-tag" data-zh="文化深度游" data-en="Cultural Tours">文化深度游</span>
+                    </div>
+                </div>
+
+                <div class="guide-card">
+                    <div class="guide-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>王老师</h3>
+                    <p class="guide-title" data-zh="美食文化导游" data-en="Food Culture Guide">美食文化导游</p>
+                    <p class="guide-experience" data-zh="12年经验" data-en="12 Years Experience">12年经验</p>
+                    <p class="guide-description" data-zh="北京本地人，熟悉胡同文化，带您品尝最地道的北京小吃和传统美食。" data-en="Beijing local, familiar with hutong culture, will take you to taste the most authentic Beijing snacks and traditional cuisine.">北京本地人，熟悉胡同文化，带您品尝最地道的北京小吃和传统美食。</p>
+                    <div class="guide-skills">
+                        <span class="skill-tag" data-zh="美食文化" data-en="Food Culture">美食文化</span>
+                        <span class="skill-tag" data-zh="胡同游" data-en="Hutong Tours">胡同游</span>
+                        <span class="skill-tag" data-zh="本地生活" data-en="Local Life">本地生活</span>
+                    </div>
+                </div>
+
+                <div class="guide-card">
+                    <div class="guide-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>张导</h3>
+                    <p class="guide-title" data-zh="现代北京导游" data-en="Modern Beijing Guide">现代北京导游</p>
+                    <p class="guide-experience" data-zh="10年经验" data-en="10 Years Experience">10年经验</p>
+                    <p class="guide-description" data-zh="了解北京现代发展，熟悉CBD、三里屯等现代地标，适合年轻游客。" data-en="Understands Beijing's modern development, familiar with modern landmarks like CBD and Sanlitun, perfect for young tourists.">了解北京现代发展，熟悉CBD、三里屯等现代地标，适合年轻游客。</p>
+                    <div class="guide-skills">
+                        <span class="skill-tag" data-zh="现代地标" data-en="Modern Landmarks">现代地标</span>
+                        <span class="skill-tag" data-zh="购物娱乐" data-en="Shopping & Entertainment">购物娱乐</span>
+                        <span class="skill-tag" data-zh="时尚潮流" data-en="Fashion & Trends">时尚潮流</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 北京景点 -->
+    <section id="attractions" class="attractions-section">
+        <div class="container">
+            <h2 class="section-title" data-zh="北京必游景点" data-en="Must-Visit Attractions in Beijing">北京必游景点</h2>
+            <p class="section-subtitle" data-zh="探索千年古都的经典地标" data-en="Explore the classic landmarks of the thousand-year ancient capital">探索千年古都的经典地标</p>
+            
+            <div class="attractions-grid">
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3 data-zh="故宫博物院" data-en="Forbidden City Museum">故宫博物院</h3>
+                    <p data-zh="明清两朝的皇家宫殿，世界文化遗产，感受古代皇权的威严。" data-en="Imperial palace of Ming and Qing dynasties, UNESCO World Heritage Site, experience the majesty of ancient imperial power.">明清两朝的皇家宫殿，世界文化遗产，感受古代皇权的威严。</p>
+                    <div class="attraction-tags">
+                        <span class="tag" data-zh="世界遗产" data-en="World Heritage">世界遗产</span>
+                        <span class="tag" data-zh="历史建筑" data-en="Historic Architecture">历史建筑</span>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3 data-zh="万里长城" data-en="Great Wall of China">万里长城</h3>
+                    <p data-zh="中华民族的象征，世界七大奇迹之一，体验古代军事防御工程。" data-en="Symbol of the Chinese nation, one of the Seven Wonders of the World, experience ancient military defense engineering.">中华民族的象征，世界七大奇迹之一，体验古代军事防御工程。</p>
+                    <div class="attraction-tags">
+                        <span class="tag" data-zh="世界奇迹" data-en="World Wonder">世界奇迹</span>
+                        <span class="tag" data-zh="户外徒步" data-en="Hiking">户外徒步</span>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <i class="fas fa-temple"></i>
+                    </div>
+                    <h3 data-zh="天坛公园" data-en="Temple of Heaven Park">天坛公园</h3>
+                    <p data-zh="明清皇帝祭天的场所，古代建筑艺术的杰作，体验皇家祭祀文化。" data-en="Sacred place where Ming and Qing emperors worshipped heaven, masterpiece of ancient architecture, experience imperial sacrificial culture.">明清皇帝祭天的场所，古代建筑艺术的杰作，体验皇家祭祀文化。</p>
+                    <div class="attraction-tags">
+                        <span class="tag" data-zh="皇家建筑" data-en="Imperial Architecture">皇家建筑</span>
+                        <span class="tag" data-zh="祭祀文化" data-en="Sacrificial Culture">祭祀文化</span>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 data-zh="什刹海胡同" data-en="Shichahai Hutong">什刹海胡同</h3>
+                    <p data-zh="体验老北京胡同文化，感受传统四合院生活，品尝地道北京小吃。" data-en="Experience old Beijing hutong culture, feel traditional courtyard life, taste authentic Beijing snacks.">体验老北京胡同文化，感受传统四合院生活，品尝地道北京小吃。</p>
+                    <div class="attraction-tags">
+                        <span class="tag" data-zh="胡同文化" data-en="Hutong Culture">胡同文化</span>
+                        <span class="tag" data-zh="美食体验" data-en="Food Experience">美食体验</span>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 data-zh="北京大学" data-en="Peking University">北京大学</h3>
+                    <p data-zh="中国最高学府之一，感受百年名校的学术氛围和优美校园环境。" data-en="One of China's top universities, experience the academic atmosphere and beautiful campus environment of this century-old prestigious school.">中国最高学府之一，感受百年名校的学术氛围和优美校园环境。</p>
+                    <div class="attraction-tags">
+                        <span class="tag" data-zh="名校参观" data-en="University Tour">名校参观</span>
+                        <span class="tag" data-zh="学术氛围" data-en="Academic Atmosphere">学术氛围</span>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <div class="attraction-image">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 data-zh="国贸CBD" data-en="Guomao CBD">国贸CBD</h3>
+                    <p data-zh="北京现代商务中心，感受国际化大都市的繁华与活力。" data-en="Beijing's modern business center, experience the prosperity and vitality of an international metropolis.">北京现代商务中心，感受国际化大都市的繁华与活力。</p>
+                    <div class="attraction-tags">
+                        <span class="tag" data-zh="现代地标" data-en="Modern Landmark">现代地标</span>
+                        <span class="tag" data-zh="商务中心" data-en="Business Center">商务中心</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 旅游线路 -->
+    <section id="routes" class="routes-section">
+        <div class="container">
+            <h2 class="section-title" data-zh="精选旅游线路" data-en="Featured Tour Routes">精选旅游线路</h2>
+            <p class="section-subtitle" data-zh="精心设计的北京深度游路线，满足不同需求" data-en="Carefully designed Beijing in-depth tour routes to meet different needs">精心设计的北京深度游路线，满足不同需求</p>
+            
+            <div class="routes-grid">
+                <div class="route-card">
+                    <div class="route-header">
+                        <h3 data-zh="经典一日游" data-en="Classic One-Day Tour">经典一日游</h3>
+                        <span class="route-duration" data-zh="8小时" data-en="8 Hours">8小时</span>
+                    </div>
+                    <div class="route-content">
+                        <p class="route-description" data-zh="体验北京最经典的景点组合" data-en="Experience Beijing's most classic attraction combination">体验北京最经典的景点组合</p>
+                        <ul class="route-itinerary">
+                            <li><i class="fas fa-check"></i> <span data-zh="天安门广场升旗仪式" data-en="Tiananmen Square Flag Raising Ceremony">天安门广场升旗仪式</span></li>
+                            <li><i class="fas fa-check"></i> <span data-zh="故宫博物院深度游" data-en="Forbidden City Museum In-Depth Tour">故宫博物院深度游</span></li>
+                            <li><i class="fas fa-check"></i> <span data-zh="天坛公园参观" data-en="Temple of Heaven Park Visit">天坛公园参观</span></li>
+                            <li><i class="fas fa-check"></i> <span data-zh="王府井步行街" data-en="Wangfujing Pedestrian Street">王府井步行街</span></li>
+                        </ul>
+                        <div class="route-price" data-zh="¥299/人" data-en="¥299/person">¥299/人</div>
+                    </div>
+                </div>
+
+                <div class="route-card featured">
+                    <div class="route-badge" data-zh="推荐" data-en="Recommended">推荐</div>
+                    <div class="route-header">
+                        <h3 data-zh="文化深度两日游" data-en="Cultural In-Depth Two-Day Tour">文化深度两日游</h3>
+                        <span class="route-duration" data-zh="2天" data-en="2 Days">2天</span>
+                    </div>
+                    <div class="route-content">
+                        <p class="route-description" data-zh="深度体验北京历史文化" data-en="In-depth experience of Beijing's history and culture">深度体验北京历史文化</p>
+                        <ul class="route-itinerary">
+                            <li><i class="fas fa-check"></i> <span data-zh="故宫+景山公园" data-en="Forbidden City + Jingshan Park">故宫+景山公园</span></li>
+                            <li><i class="fas fa-check"></i> <span data-zh="什刹海胡同游" data-en="Shichahai Hutong Tour">什刹海胡同游</span></li>
+                            <li><i class="fas fa-check"></i> <span data-zh="万里长城（八达岭）" data-en="Great Wall (Badaling)">万里长城（八达岭）</span></li>
+                            <li><i class="fas fa-check"></i> <span data-zh="颐和园皇家园林" data-en="Summer Palace Royal Garden">颐和园皇家园林</span></li>
+                            <li><i class="fas fa-check"></i> <span data-zh="天坛+雍和宫" data-en="Temple of Heaven + Lama Temple">天坛+雍和宫</span></li>
+                        </ul>
+                        <div class="route-price" data-zh="¥599/人" data-en="¥599/person">¥599/人</div>
+                    </div>
+                </div>
+
+                <div class="route-card">
+                    <div class="route-header">
+                        <h3 data-zh="现代北京一日游" data-en="Modern Beijing One-Day Tour">现代北京一日游</h3>
+                        <span class="route-duration" data-zh="6小时" data-en="6 Hours">6小时</span>
+                    </div>
+                    <div class="route-content">
+                        <p class="route-description" data-zh="感受现代北京的活力" data-en="Experience the vitality of modern Beijing">感受现代北京的活力</p>
+                        <ul class="route-itinerary">
+                            <li><i class="fas fa-check"></i> <span data-zh="国贸CBD商务区" data-en="Guomao CBD Business District">国贸CBD商务区</span></li>
+                            <li><i class="fas fa-check"></i> <span data-zh="三里屯时尚街区" data-en="Sanlitun Fashion District">三里屯时尚街区</span></li>
+                            <li><i class="fas fa-check"></i> <span data-zh="798艺术区" data-en="798 Art District">798艺术区</span></li>
+                            <li><i class="fas fa-check"></i> <span data-zh="奥林匹克公园" data-en="Olympic Park">奥林匹克公园</span></li>
+                        </ul>
+                        <div class="route-price" data-zh="¥199/人" data-en="¥199/person">¥199/人</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title" data-zh="联系我们" data-en="Contact Us">联系我们</h2>
+            <p class="section-subtitle" data-zh="加入北旅CLUB，开启您的北京之旅" data-en="Join BeiLv CLUB and start your Beijing journey">加入北旅CLUB，开启您的北京之旅</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-zh="联系电话" data-en="Phone">联系电话</h4>
+                            <p>400-123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4 data-zh="邮箱地址" data-en="Email">邮箱地址</h4>
+                            <p>info@beilvclub.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4 data-zh="公司地址" data-en="Address">公司地址</h4>
+                            <p data-zh="北京市朝阳区建国门外大街1号" data-en="No.1 Jianguomenwai Street, Chaoyang District, Beijing">北京市朝阳区建国门外大街1号</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4 data-zh="营业时间" data-en="Business Hours">营业时间</h4>
+                            <p data-zh="周一至周日 8:00-20:00" data-en="Monday to Sunday 8:00-20:00">周一至周日 8:00-20:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3 data-zh="立即预订" data-en="Book Now">立即预订</h3>
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="您的姓名" data-placeholder-zh="您的姓名" data-placeholder-en="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="联系电话" data-placeholder-zh="联系电话" data-placeholder-en="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="邮箱地址" data-placeholder-zh="邮箱地址" data-placeholder-en="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="route" name="route" required>
+                                <option value="" data-zh="选择旅游线路" data-en="Select Tour Route">选择旅游线路</option>
+                                <option value="classic" data-zh="经典一日游" data-en="Classic One-Day Tour">经典一日游</option>
+                                <option value="culture" data-zh="文化深度两日游" data-en="Cultural In-Depth Two-Day Tour">文化深度两日游</option>
+                                <option value="modern" data-zh="现代北京一日游" data-en="Modern Beijing One-Day Tour">现代北京一日游</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="特殊需求或留言" data-placeholder-zh="特殊需求或留言" data-placeholder-en="Special Requirements or Comments" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-zh="提交预订" data-en="Submit Booking">提交预订</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>北旅CLUB</h3>
+                    <p data-zh="专业北京导游服务，让您的北京之旅更加精彩" data-en="Professional Beijing tour guide service, making your Beijing journey more wonderful">专业北京导游服务，让您的北京之旅更加精彩</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-qq"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 data-zh="服务项目" data-en="Services">服务项目</h4>
+                    <ul>
+                        <li><a href="#guides" data-zh="导游服务" data-en="Guide Service">导游服务</a></li>
+                        <li><a href="#routes" data-zh="旅游线路" data-en="Tour Routes">旅游线路</a></li>
+                        <li><a href="#attractions" data-zh="景点介绍" data-en="Attractions">景点介绍</a></li>
+                        <li><a href="#contact" data-zh="定制服务" data-en="Custom Service">定制服务</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-zh="联系方式" data-en="Contact">联系方式</h4>
+                    <p data-zh="电话：400-123-4567" data-en="Phone: 400-123-4567">电话：400-123-4567</p>
+                    <p data-zh="邮箱：info@beilvclub.com" data-en="Email: info@beilvclub.com">邮箱：info@beilvclub.com</p>
+                    <p data-zh="地址：北京市朝阳区建国门外大街1号" data-en="Address: No.1 Jianguomenwai Street, Chaoyang District, Beijing">地址：北京市朝阳区建国门外大街1号</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-zh="&copy; 2024 北旅CLUB. 保留所有权利." data-en="&copy; 2024 BeiLv CLUB. All rights reserved.">&copy; 2024 北旅CLUB. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
